@@ -1,8 +1,9 @@
 # pynamodb-study
-the study of pythonic interface for amazon's dynamodb
+- the study of pythonic interface for amazon's dynamodb
+- reference: https://pynamodb.readthedocs.io/en/stable/tutorial.html#why-pynamodb
 
-# pynamodb
-- 3개의 api levels
+## pynamodb
+- 3개의 `api levels`
   - `connection` , `tableconnection`, `model`
 
 ## model
@@ -24,8 +25,11 @@ the study of pythonic interface for amazon's dynamodb
 - rcu, wcu 명시
 - index_name
 ### gsi
+- TODO
 ### lsi
+- TODO
 ### querying an index
+- TODO
 ### pagination and last evaluated key
 - 쿼리는 `ResultIterator`object 리턴
 - 객체를 지연평가(generator)하고 싶으면 `last_evaluated_key`
@@ -39,7 +43,7 @@ the study of pythonic interface for amazon's dynamodb
 - updateitem은 upsert로 동작 
 
 ## Conditional Expression
-
+- TODO
 
 ## Polymorphism
 - discriminators
@@ -49,7 +53,9 @@ the study of pythonic interface for amazon's dynamodb
 - 모든 `Atrribute` 클래스들은 세개의 메소드를 정의해야 됨
   - `serialize`, `deserialize`, `get_value`
 ### List Attributes
-
+- TODO
+### Map Attributes
+- TODO
 
 ## Optimistic locking
 > 자원에 락을 걸어서 선점하지말고, 동시성 문제가 발생하면 그때 가서 처리
